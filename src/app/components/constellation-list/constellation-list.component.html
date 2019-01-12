@@ -1,3 +1,32 @@
-<p>
-  constellation-list works!
-</p>
+<div class="row mt-5 pt-5 animated fadeInRight" data-wow-delay="0.5s">
+  <div class="card col-5 mt-2 pt-2 mr-2 hoverable" *ngFor="let constellation of constellations">
+    <div class="card">
+
+      <!-- Card image -->
+      <div class="view overlay">
+        <!-- <img class="card-img-top" ng-src=" {{constellation.path}}" alt="Card image cap"> -->
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+      <!-- Card content -->
+      <div class="card-body elegant-color white-text rounded-bottom">
+
+        <!-- Title -->
+        <h4 class="card-title">{{constellation.name}}</h4>
+        <hr class="hr-light">
+        <!-- Text -->
+        <p class="card-text white-text mb-4">{{constellation.date}}</p>
+        <!-- Link -->
+        <a class="white-text d-flex justify-content-end" routerLink="/constellation-detail/{{constellation.id}}"
+          mdbRippleRadius>
+          <h5>查看更多 <i class="fa fa-angle-double-right"></i></h5>
+        </a>
+
+      </div>
+
+    </div>
+    <!-- Card Dark -->
+  </div>
+</div>

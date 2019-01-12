@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Constellation } from '../../constellation';
+import { ConstellationService } from '../../constellation.service';
 
 @Component({
   selector: 'app-constellation-list',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConstellationListComponent implements OnInit {
 
-  constructor() { }
+  constellations: Constellation[];
+  constructor(private constellationService: ConstellationService) { }
 
   ngOnInit() {
+    this.getConstellations();
+  }
+
+  getConstellations(): void {
+    this.constellationService.getConstellations()
+      .subscribe(constellations => this.constellations = constellations);
   }
 
 }

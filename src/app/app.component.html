@@ -1,4 +1,4 @@
-<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark primary-color scrolling-navbar" [containerInside]="false">
+<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark elegant-color scrolling-navbar" [containerInside]="false">
     <logo>
         <a class="logo navbar-brand" href="#">
             <i class="fa fa-wrench"></i>
@@ -8,7 +8,7 @@
     <links>
         <ul class="navbar-nav mr-auto">
             <li class="nav-item waves-light" mdbRippleRadius>
-                <a class="nav-link" routerLink="./components/constellation-list">所有英雄</a>
+                <a class="nav-link" routerLink="/constellation-list">所有星座</a>
             </li>
         </ul>
     </links>
@@ -18,3 +18,11 @@
         <router-outlet></router-outlet>
     </div>
 </main>
+
+
+
+<footer class="page-footer font-small elegant-color ">
+    <div class="footer-copyright text-center py-3">2019.1 学习来自:
+        <a href="https://qige.io/" target="_blank"> 棋歌教学网</a>
+    </div>
+</footer>

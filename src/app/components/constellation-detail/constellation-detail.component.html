@@ -1,3 +1,23 @@
-<p>
-  constellation-detail works!
-</p>
+<div class="row mt-5 pt-5 animated zoomIn" data-wow-delay="0.5s">
+  <div class="col-12 ">
+    <div>
+      <!--Header-->
+      <div class="text-center ">
+        <h3>星座详情</h3>
+      </div>
+      <div class="grey-text">
+        {{constellation.description}}
+      </div>
+      <hr>
+      <div class="text-center mt-1-half">
+        <button class="btn btn-deep-orange mb-2 waves-light" mdbRippleRadius (click)="goBack()">
+            返回
+        </button>
+      </div>
+    </div>
+  </div>
+</div>       
+
+
+
+
