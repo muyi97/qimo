@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Constellation } from '../../constellation';
 import { ConstellationService } from '../../constellation.service';
 
+
 @Component({
   selector: 'app-constellation-list',
   templateUrl: './constellation-list.component.html',

@@ -1,11 +1,12 @@
-<div class="row mt-5 pt-5 animated fadeInRight" data-wow-delay="0.5s">
-  <div class="card col-5 mt-2 pt-2 mr-2 hoverable" *ngFor="let constellation of constellations">
+
+<div  class="row mt-5 pt-5 animated fadeInRight" data-wow-delay="0.5s">
+  <div class="card col-5 mt-5 pt-2 mr-auto hoverable" *ngFor="let constellation of constellations">
     <div class="card">
 
       <!-- Card image -->
       <div class="view overlay">
-        <!-- <img class="card-img-top" ng-src=" {{constellation.path}}" alt="Card image cap"> -->
-        <a>
+        <img class="card-img-top" src="{{constellation.path}}" alt="Card image cap">
+        <a routerLink="/constellation-detail/{{constellation.id}}">
           <div class="mask rgba-white-slight"></div>
         </a>
       </div>
@@ -30,3 +31,8 @@
     <!-- Card Dark -->
   </div>
 </div>
+<div>
+    <br>  
+    <br> 
+    <br>
+  </div>    
