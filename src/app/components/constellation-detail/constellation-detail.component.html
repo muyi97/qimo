@@ -2,26 +2,22 @@
   <div class="col-12 ">
     <div>
       <!--Header-->
-      <div class="text-center ">
+      <div class="text-center grey-text">
         <h3>星座详情</h3>
       </div>
-      <div class="grey-text">
-        {{constellation.description}}
+      <div [innerHTML]=constellation.description class="grey-text">
+        
       </div>
       <hr>
-      <div class="text-center mt-1-half">
+      <div class="te xt-center mt-1-half">
         <button class="btn btn-deep-orange mb-2 waves-light" mdbRippleRadius (click)="goBack()">
-            返回
+          返回
         </button>
       </div>
     </div>
   </div>
-</div>   
+</div>
 <div>
-  <br>  
-  <br> 
-</div>    
-
-
-
-
+  <br>
+  <br>
+</div>
